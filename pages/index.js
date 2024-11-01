@@ -49,13 +49,14 @@ export default function Home() {
   };
 
   useEffect(()=>{
-    fetchData(currentPage,"");
+    fetchData(currentPage,search);
   },[currentPage])
 
   return (
     <div className={styles.container}>
       <Head>
         <title>Mi Página</title>
+        <meta name="description" content="Página para búsqueda de propiedades inmobiliarias" />
         <meta content="initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport" />
         <meta name="viewport" content="width=device-width" />
         <meta property="og:title" content="Test de inmuebles" />
